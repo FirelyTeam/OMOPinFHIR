@@ -1,0 +1,57 @@
+{
+    "resourceType": "ValueSet",
+    "text":
+    {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>OMOP Gender</h2><tt>https://fhir.ohdsi.org/ValueSet/OMOPGender</tt></div>"
+    },
+    "url": "https://fhir.ohdsi.org/ValueSet/OMOPGender",
+    "version": "CDM V5",
+    "name": "ValueSetOMOPGender",
+    "id": "ValueSetOMOPGender",
+    "title": "ValueSet OMOP Gender",
+    "description": "A ValueSet for OMOP Gender",
+    "status": "active",
+    "contact":
+    [
+        {
+            "telecom":
+            [
+                {
+                    "system": "email"
+                }
+            ]
+        }
+    ],
+    "compose":
+    {
+        "include":
+        [
+            {
+                "system": "https://fhir.ohdsi.org/CodeSystem/OMOPGender",
+                "version": "CDM V5"
+            }
+        ]
+    },
+    "expansion":
+    {
+        "identifier": "urn:uuid:6324800b-3414-4dab-bfc2-747a456eeceb",
+        "timestamp": "2021-06-14T17:23:00.006788+02:00",
+        "total": 2,
+        "contains":
+        [
+            {
+                "system": "https://fhir.ohdsi.org/CodeSystem/OMOPGender",
+                "version": "CDM V5",
+                "code": "F",
+                "display": "FEMALE"
+            },
+            {
+                "system": "https://fhir.ohdsi.org/CodeSystem/OMOPGender",
+                "version": "CDM V5",
+                "code": "M",
+                "display": "MALE"
+            }
+        ]
+    }
+}

@@ -1,0 +1,27 @@
+- include: recommended
+
+- name: canonical-starts-with-base-url
+  filter: url.exists() and ImplementationGuide.exists().not()
+  # Excluding IGs for now, since they have a Simplifier.net canonical
+  status: "Checking if canonical URL starts with correct base"
+  predicate: url.startsWith('https://fhir.ohdsi.org/')
+  error-message: "Canonical URL does not start with correct base"
+
+# - name: canonical-ends-with-name
+#   filter: url.exists() and ImplementationGuide.exists().not()
+#   # Excluding IGs for now, since they have a Simplifier.net canonical
+#   status: "Checking if canonical URL ends with the value of name"
+#   predicate: url.endsWith(name.replace('-', '/'))
+#   error-message: "Canonical URL does not end with the value of name"
+
+- name: id-matches-name
+  filter: (StructureDefinition or ValueSet or CodeSystem or CapabilityStatement or SearchParameter or NamingSystem or ConceptMap).exists()
+  predicate: id = name
+
+- name: title-matches-name-with-spaces
+  filter: (StructureDefinition or ValueSet or CodeSystem or CapabilityStatement or SearchParameter or NamingSystem or ConceptMap).exists()
+  predicate: id = title.replace(' ', '')
+
+- name: all-resources-in-json
+  category: Resource
+  filepath-predicate: '.*\.json'

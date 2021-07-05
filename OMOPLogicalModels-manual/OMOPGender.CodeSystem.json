@@ -1,0 +1,37 @@
+{
+  "resourceType": "CodeSystem",
+  "title": "CodeSystem OMOP Gender",
+  "name": "CodeSystemOMOPGender",
+  "id": "CodeSystemOMOPGender",
+  "url": "https://fhir.ohdsi.org/CodeSystem/OMOPGender",
+  "description": "OMOP Gender CodeSystem",
+  "version": "CDM V5",
+  "status": "active",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": 8532,
+      "display": "FEMALE"
+    },
+    {
+      "code": 8507,
+      "display": "MALE"
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>OMOP Gender</h2><tt>https://fhir.ohdsi.org/CodeSystem/OMOPGender</tt><p>OMOP Gender</p></div>"
+  },
+  "valueSet": "https://fhir.ohdsi.org/ValueSet/OMOPGender",
+  "count": 2
+}
