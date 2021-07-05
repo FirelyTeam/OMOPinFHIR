@@ -35,5 +35,5 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSetOMOPEthnicity</h2><tt>https://fhir.ohdsi.org/ValueSet/OMOPEthnicity</tt><p>Ethnicity as coded in the OMOP vocabulary</p></div>"
   },
-  "name": "ValueSet_of_OMOP_Ethnicity"
+  "name": "ValueSetOMOPEthnicity"
 }
