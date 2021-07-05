@@ -1,0 +1,37 @@
+{
+  "resourceType": "CodeSystem",
+  "title": "CodeSystemOMOPEthnicity",
+  "url": "https://fhir.ohdsi.org/CodeSystem/OMOPEthnicity",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "description": "The Code System for OMOP Ethnicity concepts",
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "38003563",
+      "display": "Hispanic",
+      "definition": "Hispanic or Latino"
+    },
+    {
+      "code": "38003564",
+      "display": "Not Hispanic",
+      "definition": "Not Hispanic or Latino"
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CodeSystemOMOPEthnicity</h2><tt>https://fhir.ohdsi.org/CodeSystem/OMOPEthnicity</tt><p>The Code System for OMOP Ethnicity concepts</p></div>"
+  },
+  "name": "CodeSystemOMOPEthnicity",
+  "valueSet": "https://fhir.ohdsi.org/ValueSet/OMOPEthnicity",
+  "count": 2
+}

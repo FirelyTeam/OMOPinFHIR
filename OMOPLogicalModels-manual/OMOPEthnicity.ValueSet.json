@@ -1,0 +1,38 @@
+{
+  "resourceType": "ValueSet",
+  "url": "https://fhir.ohdsi.org/ValueSet/OMOPEthnicity",
+  "title": "ValueSetOMOPEthnicity",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.ohdsi.org/CodeSystem/OMOPEthnicity",
+        "concept": [
+          {
+            "code": "38003563",
+            "display": "Hispanic or Latino"
+          },
+          {
+            "code": "38003564",
+            "display": "Not Hispanic or Latino"
+          }
+        ]
+      }
+    ]
+  },
+  "description": "Ethnicity as coded in the OMOP vocabulary",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSetOMOPEthnicity</h2><tt>https://fhir.ohdsi.org/ValueSet/OMOPEthnicity</tt><p>Ethnicity as coded in the OMOP vocabulary</p></div>"
+  },
+  "name": "ValueSet_of_OMOP_Ethnicity"
+}
