@@ -1,6 +1,7 @@
 {
   "resourceType": "CodeSystem",
   "title": "CodeSystemOMOPEthnicity",
+  "id": "CodeSystemOMOPEthnicity",
   "url": "https://fhir.ohdsi.org/CodeSystem/OMOPEthnicity",
   "status": "draft",
   "contact": [

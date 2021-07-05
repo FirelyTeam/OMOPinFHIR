@@ -2,6 +2,7 @@
   "resourceType": "ValueSet",
   "url": "https://fhir.ohdsi.org/ValueSet/OMOPEthnicity",
   "title": "ValueSetOMOPEthnicity",
+  "id": "ValueSetOMOPEthnicity",
   "status": "draft",
   "contact": [
     {
