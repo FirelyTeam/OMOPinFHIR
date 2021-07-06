@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "LogicalModelOMOPPerson",
+  "id": "LogicalModel_OMOP_Person",
   "meta": {
     "versionId": "6",
     "lastUpdated": "2021-06-14T15:27:52.313+00:00"
   },
   "url": "https://fhir.ohdsi.org/LogicalModel/OMOPPerson",
-  "name": "LogicalModelOMOPPerson",
+  "name": "LogicalModel_OMOP_Person",
   "title": "LogicalModel OMOP Person",
   "status": "draft",
   "date": "2021-06-14T14:52:24.6891825Z",

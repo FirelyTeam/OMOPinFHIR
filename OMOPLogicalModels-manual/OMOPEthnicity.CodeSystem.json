@@ -1,7 +1,8 @@
 {
   "resourceType": "CodeSystem",
-  "title": "CodeSystemOMOPEthnicity",
-  "id": "CodeSystemOMOPEthnicity",
+  "title": "CodeSystem OMOP Ethnicity",
+  "id": "CodeSystem_OMOP_Ethnicity",
+  "name": "CodeSystem_OMOP_Ethnicity",
   "url": "https://fhir.ohdsi.org/CodeSystem/OMOPEthnicity",
   "status": "draft",
   "contact": [
@@ -32,7 +33,6 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CodeSystemOMOPEthnicity</h2><tt>https://fhir.ohdsi.org/CodeSystem/OMOPEthnicity</tt><p>The Code System for OMOP Ethnicity concepts</p></div>"
   },
-  "name": "CodeSystemOMOPEthnicity",
   "valueSet": "https://fhir.ohdsi.org/ValueSet/OMOPEthnicity",
   "count": 2
 }

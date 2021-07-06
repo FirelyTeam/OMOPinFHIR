@@ -7,12 +7,12 @@
   predicate: url.startsWith('https://fhir.ohdsi.org/')
   error-message: "Canonical URL does not start with correct base"
 
-# - name: canonical-ends-with-name
-#   filter: url.exists() and ImplementationGuide.exists().not()
-#   # Excluding IGs for now, since they have a Simplifier.net canonical
-#   status: "Checking if canonical URL ends with the value of name"
-#   predicate: url.endsWith(name.replace('-', '/'))
-#   error-message: "Canonical URL does not end with the value of name"
+- name: canonical-ends-with-name
+  filter: url.exists() and ImplementationGuide.exists().not()
+  # Excluding IGs for now, since they have a Simplifier.net canonical
+  status: "Checking if canonical URL ends with the value of name"
+  predicate: url.substring('https://fhir.ohdsi.org/'.length()) = name.substring(0, indexOf('_')) + '/' + name.substring(indexOf('_')+1).replace('_', '')
+  error-message: "Canonical URL does not end with the value of name"
 
 - name: id-matches-name
   filter: (StructureDefinition or ValueSet or CodeSystem or CapabilityStatement or SearchParameter or NamingSystem or ConceptMap).exists()
@@ -20,7 +20,7 @@
 
 - name: title-matches-name-with-spaces
   filter: (StructureDefinition or ValueSet or CodeSystem or CapabilityStatement or SearchParameter or NamingSystem or ConceptMap).exists()
-  predicate: id = title.replace(' ', '')
+  predicate: id = title.replace(' ', '_')
 
 - name: all-resources-in-json
   category: Resource

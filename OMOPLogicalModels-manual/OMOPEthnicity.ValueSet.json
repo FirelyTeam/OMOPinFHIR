@@ -1,8 +1,9 @@
 {
   "resourceType": "ValueSet",
   "url": "https://fhir.ohdsi.org/ValueSet/OMOPEthnicity",
-  "title": "ValueSetOMOPEthnicity",
-  "id": "ValueSetOMOPEthnicity",
+  "title": "ValueSet OMOP Ethnicity",
+  "id": "ValueSet_OMOP_Ethnicity",
+  "name": "ValueSet_OMOP_Ethnicity",
   "status": "draft",
   "contact": [
     {
@@ -34,6 +35,5 @@
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSetOMOPEthnicity</h2><tt>https://fhir.ohdsi.org/ValueSet/OMOPEthnicity</tt><p>Ethnicity as coded in the OMOP vocabulary</p></div>"
-  },
-  "name": "ValueSetOMOPEthnicity"
+  }
 }

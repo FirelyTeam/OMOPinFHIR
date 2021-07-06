@@ -1,8 +1,8 @@
 {
   "resourceType": "CodeSystem",
   "title": "CodeSystem OMOP Gender",
-  "name": "CodeSystemOMOPGender",
-  "id": "CodeSystemOMOPGender",
+  "name": "CodeSystem_OMOP_Gender",
+  "id": "CodeSystem_OMOP_Gender",
   "url": "https://fhir.ohdsi.org/CodeSystem/OMOPGender",
   "description": "OMOP Gender CodeSystem",
   "version": "CDM V5",
