@@ -1,0 +1,11 @@
+{
+    "resourceType": "OMOPPerson",
+    "person_id": 1,
+    "gender_concept_id": {
+        "coding":{
+            "system": "https://fhir.ohdsi.org/CodeSystem/Gender",
+            "code": "F"
+        }
+    },
+    "year_of_birth": "1980"
+}

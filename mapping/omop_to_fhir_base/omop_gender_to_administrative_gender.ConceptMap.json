@@ -1,0 +1,37 @@
+{
+    "resourceType":"ConceptMap",
+    "id":"OmopTest",
+    "name":"OmopTest",
+    "status":"draft",
+    "group": [
+        {
+            "element": [
+                {
+                    "target": [
+                        {
+                            "code":"female",
+                            "display":"Female",
+                            "equivalence":"equal"
+                        }
+                    ],
+                    "code":"F",
+                    "display":"FEMALE"
+                },
+                {
+                    "target": [
+                        {
+                            "code":"male",
+                            "display":"Male",
+                            "equivalence":"equal"
+                        }
+                    ],
+                    "code":"M",
+                    "display":"MALE"
+                }
+            ],
+            "source":"https://fhir.ohdsi.org/CodeSystem/Gender",
+            "target":"http://hl7.org/fhir/administrative-gender"
+        }
+    ],
+    "url":"https://fhir.ohdsi.org/ConceptMap/OMOPPerson"
+}

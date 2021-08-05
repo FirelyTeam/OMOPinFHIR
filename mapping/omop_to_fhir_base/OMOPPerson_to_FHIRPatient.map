@@ -1,0 +1,9 @@
+map "https://fhir.ohdsi.org/StructureMap/OMOPPerson" = "OMOPPerson"
+
+uses "https://fhir.ohdsi.org/LogicalModel/OMOPPerson" as source
+uses "http://hl7.org/fhir/StructureDefinition/Patient" as target
+
+group test(source src : OMOPPerson, target tgt : Patient) {
+    src.person_id as personId -> tgt.identifier as identifier, identifier.value = personId;
+    src.gender_concept_id as gender_concept_id -> tgt.gender = translate(gender_concept_id, 'https://fhir.ohdsi.org/ConceptMap/OMOPPerson', 'code');
+}
